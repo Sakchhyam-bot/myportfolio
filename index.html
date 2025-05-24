@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!--heading part starts-->
-    <header class="header"> 
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">Who am I?</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Showcase</a>
-        </nav>
-    </header>
+  <header class="header"> 
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#" style="--i:1" class="active">Who am I?</a>
+      <a href="#" style="--i:3">Skills</a>
+      <a href="#" style="--i:4">Showcase</a>
+    </nav>
+  </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello It's Me</h3><br>
-            <h1>Sakchhyam Rupakheti</h1><br>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>I am an intermediate web developer with experience in JavaScript, HTML, and CSS. I'm a quick learner and collaborate closely with clients to create efficient and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!</p>
-            
-            <div class="home-scl">
-                <a href="https://www.facebook.com/sakchhyam.rupakheti/" target="_blank" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/__sakchhyam__/" target="_blank" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me/yourwhatsappnumber" target="_blank" style="--i:9" class="tooltip" data-tooltip="+977 9861846432"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.linkedin.com/in/sakchhyam-rupakheti-b32947326/" target="_blank" style="--i:10"><i class='bx bxl-linkedin'></i></a>
-            </div>
-            
-            <a href="#" class="btn-box">MORE ABOUT ME</a>
+  <section class="home">
+    <div class="home-container">
+      <div class="home-content">
+        <h3>Hello It's Me</h3>
+        <h1>Sakchhyam Rupakheti</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>I am an intermediate web developer with experience in JavaScript, HTML, and CSS. I'm a quick learner and collaborate closely with clients to create efficient and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!</p>
+        <div class="home-scl">
+          <a href="https://www.facebook.com/sakchhyam.rupakheti/" target="_blank" style="--i:7"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/__sakchhyam__/" target="_blank" style="--i:8"><i class='bx bxl-instagram'></i></a>
+          <a href="https://wa.me/9779861846432" target="_blank" style="--i:9" class="whatsapp-tooltip">
+            <i class='bx bxl-whatsapp'></i>
+            <span class="tooltip-text">+977 9861846432</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sakchhyam-rupakheti-b32947326/" target="_blank" style="--i:10"><i class='bx bxl-linkedin'></i></a>
         </div>
-    </section>
+        <a href="#" class="btn-box">MORE ABOUT ME</a>
+      </div>
+      <div class="home-image">
+        <img src="bg.jpg" alt="My Photo" class="profile-img">
+      </div>
+    </div>
+  </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            new Typed(".text", {
-                strings: ["Frontend Developer", "Web-Developer"],
-                typeSpeed: 100,
-                backSpeed: 100,
-                backDelay: 1000,
-                loop: true
-            });
-        });
-    </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      var typed = new Typed(".text", {
+        strings: ["Frontend Developer", "Web-Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+      });
+    });
+  </script>
 </body>
 </html>
